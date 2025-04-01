@@ -70,7 +70,7 @@ Future<String> getimage({required String path}) async {
 void showLoadingDialog(BuildContext context) {
   showDialog(
     barrierDismissible:
-        false, // Prevent dismissing the dialog by tapping outside
+        false,
     context: context,
     builder: (BuildContext context) {
       return Dialog(

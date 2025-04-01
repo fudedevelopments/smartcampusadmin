@@ -1,7 +1,6 @@
 import 'package:amplify_authenticator/amplify_authenticator.dart';
 import 'package:flutter/material.dart';
 import 'package:smartcampusadmin/users/userspage.dart';
-import 'package:smartcampusadmin/settings/settings.dart';
 import 'package:smartcampusadmin/banner/banner_page.dart';
 import 'package:smartcampusadmin/analytics/analytics_page.dart';
 
@@ -35,7 +34,6 @@ class _LayoutPageState extends State<LayoutPage> {
     const Home(),
     const BannerPage(),
     const AnalyticsPage(),
-    const SettingsPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -102,7 +100,6 @@ class _LayoutPageState extends State<LayoutPage> {
                       _buildNavItem(Icons.people, "Users", 0),
                       _buildNavItem(Icons.image, "Banners", 1),
                       _buildNavItem(Icons.analytics, "Analytics", 2),
-                      _buildNavItem(Icons.settings, "Settings", 3),
                     ],
                   ),
                 ),

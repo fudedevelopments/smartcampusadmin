@@ -11,7 +11,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final TextEditingController _searchController = TextEditingController();
   List<UserModel> users = [];
   bool isLoading = false;
 
@@ -45,7 +44,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("User Management"),
+        title: Text("Staff User Management"),
         actions: [
           IconButton(
             icon: Icon(Icons.refresh),

@@ -5,10 +5,10 @@ import 'package:smartcampusadmin/banner/models/banner_image.dart';
 import 'package:smartcampusadmin/banner/services/banner_service.dart';
 import 'package:uuid/uuid.dart';
 
-// Cache for image URLs to prevent repeated API calls
+
 Map<String, String> _imageUrlCache = {};
 
-// Fetch banner images from the database and convert them to BannerImage objects
+
 Future<List<BannerImage>> getBannerimagesurl() async {
   try {
     // Fetch the banner images record from the database
